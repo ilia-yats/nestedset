@@ -1,0 +1,21 @@
+Написать код, который будет работать с деревом mysql (nested set) с таблицей category.
+Таблица вида
+id | title | lft | rgt | lvl
+Работа с базой через PDO.
+
+Функции:
+- добавить узел, параметр title, к какому узлу цеплять (по умолчанию к корню дерева), выводит id добавленного узла
+- удалить узел, параметр id
+- переименовать узел, параметр id, новый title
+- переместить узел вверх, параметр id
+- переместить узел вниз, параметр id
+
+пример команд:
+# php test-task.php addNode "Узел 1"
+Node "Узел 1" has been added with id #2
+
+php test-task.php deleteNode 2
+Node id #2 has been deleted
+
+php test-task.php deleteNode 3
+Error, node with id #3 is not found
