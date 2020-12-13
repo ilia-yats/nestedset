@@ -1,6 +1,6 @@
 # nestedset
 
-### Script for managing a hierahical structure in relational database (sqlite)
+### Example script for managing a hierahical structure in relational database (sqlite) as Nested Set
 
 **Initialize DB:**
   
@@ -9,6 +9,10 @@
 **Add node:**
   
     DB_DSN="sqlite:nodes.db" php nodemanage.php addNode {nodeName}
+
+**See current tree:**
+
+    DB_DSN="sqlite:nodes.db" php shownodes.php
 
 **Delete node (with all children):**
 
