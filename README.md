@@ -28,4 +28,8 @@
 
 **Move node (with all children) under new parent on exact position:**
 
-    DB_DSN="sqlite:nodes.db" php php nodemanage.php moveNode {movedNodeID} {newParentID} {position}
+    DB_DSN="sqlite:nodes.db" php nodemanage.php moveNode {movedNodeID} {newParentID} {position}
+    
+**Reset DB:**
+
+    DB_DSN="sqlite:nodes.db" php resetdb.php
